@@ -1,0 +1,11 @@
+Package: fullpagejs
+Title: Html slide using fullpage.js.
+Version: 0.0.0.9000
+Authors@R: person("Kazuhiro", "MAEDA", email = "kazu@kz-md.net", role = c("aut", "cre"))
+Description: Html slide using fullpage.js.
+Depends: R (>= 3.4.0)
+License: MIT + file Licenses
+Encoding: UTF-8
+LazyData: true
+Imports: rmarkdown
+RoxygenNote: 6.0.1

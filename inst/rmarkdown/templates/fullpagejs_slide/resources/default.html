@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="$fullpagejs-path$/jquery.fullPage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="$fullpagejs-path$/jquery.fullPage.js"></script>
+
+  $if(highlightjs)$
+  <link rel="stylesheet"
+	href="$highlightjs$/$if(highlightjs-theme)$$highlightjs-theme$$else$default$endif$.css"
+	$if(html5)$$else$type="text/css" $endif$/>
+  <script src="$highlightjs$/highlight.js"></script>
+  $endif$
+
+  $if(highlighting-css)$
+  <style type="text/css">
+   $highlighting-css$
+  </style>
+  $endif$
+
+  $for(header-includes)$
+    $header-includes$
+  $endfor$
+
+  $if(css)$
+    $for(css)$
+      <link rel="stylesheet" href="$css$"/>
+    $endfor$
+  $endif$
+
+</head>
+
+<body>
+  <script type="text/javascript">
+		$$(document).ready(function() {
+			$$('#fullpage').fullpage({
+			  $fullpagejs-options$
+			});
+		});
+	</script>
+  <div id="fullpage">
+    <div class="section titleslide">
+      <h1>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</h1>
+      <p>$author$</p>
+    </div>
+  
+  $for(include-before)$
+    $include-before$
+  $endfor$
+
+$body$
+
+  $for(include-after)$
+    $include-after$
+  $endfor$
+  </div>
+</body>
+</html>

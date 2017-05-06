@@ -1,0 +1,56 @@
+---
+title: "Untitled"
+output:
+  fullpagejs::fullpagejs_slide:
+#    self_contained: FALSE
+    fullpagejs_options: "sectionsColor: ['#ccc', '#fff']"
+---
+
+# hogehoge
+
+hogehogehoge.
+
+### hogeaaa
+
+hogegaidfadso
+
+### dgakskddgoa
+
+dsndaodsna
+
+# side-test
+
+## side1 {.slide}
+
+fugafuga
+
+## side2{.slide}
+
+piyopiyo
+
+# R chunk test
+
+output test.
+
+```{r}
+summary(cars)
+```
+
+# table test
+
+table test.
+
+```{r}
+knitr::kable(head(iris, 6))
+```
+
+# plot test
+
+plot test.
+
+```{r}
+plot(1:10)
+```
+
+
+
