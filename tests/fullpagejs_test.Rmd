@@ -2,7 +2,7 @@
 title: "Untitled"
 output:
   fullpagejs::fullpagejs_slide:
-#    self_contained: FALSE
+    self_contained: FALSE
     fullpagejs_options: "sectionsColor: ['#ccc', '#fff']"
 ---
 
@@ -52,5 +52,4 @@ plot test.
 plot(1:10)
 ```
 
-
-
+hogehoge.

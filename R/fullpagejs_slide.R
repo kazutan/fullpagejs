@@ -51,6 +51,11 @@ fullpagejs_slide <- function(fig_width = 8,
   for (css_file in css)
     args <- c(args, "--css", pandoc_path_arg(css))
   
+  # jQuery and jQueryui
+  extra_dependencies <- append(extra_dependencies, 
+                               list(html_dependency_jquery(),
+                                    html_dependency_jqueryui()))
+  
   # pre-processor
   pre_processor <- function(metadata, input_file, runtime, knit_meta, files_dir,
                             output_dir) {
