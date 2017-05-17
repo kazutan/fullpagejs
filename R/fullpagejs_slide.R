@@ -61,7 +61,7 @@ fullpagejs_slide <- function(fig_width = 8,
                             output_dir) {
     # not work shiny
     if (identical(runtime, "shiny")) {
-      stop("revealjs_presentation is not compatible with runtime 'shiny'", 
+      stop("fullpagejs_slide is not compatible with runtime 'shiny'", 
            call. = FALSE)
     }
     
